@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Acadêmico para Uninter: Nicolly Bernardo Gones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho fixo com navegação principal -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <!-- Botão de interatividade JS para mudar tema -->
+            <button id="btn-tema">Escuro</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção 1: Sobre mim -->
+        <section id="sobre" class="secao">
+            <h1>Sobre Mim</h1>
+            <p>Olá! me chamo Nicolly Bernardo Gomes e sou aluna da Uninter no curso de Sistemas de Informação. Trabalho na operação técnica e comercial da Hypercloud 
+                (Google Partner), unindo tecnologia e atendimento ao cliente todos os dias. Especialista Google Workspace, aprendizado contínuo!  E, no tempo livre, 
+                uma verdadeira entusiasta do cinema e de boas maratonas de séries.</p>
+            
+        </section>
+
+        <!-- Seção 2: Formação -->
+        <section id="formacao" class="secao">
+            <h2>Formação Educacional</h2>
+            <ul>
+                <li><strong>Sistemas de Informação - em curso. </strong> - UNINTER</li>
+                <li><strong>Técnico em Informática - Conclusão em 2023 </strong> - FUNEC</li>
+                <li><strong>Educador Google N1 & N2 entre outras Certificações GWS </strong> - Google Workspace e Google Workspace for Education </li>
+                <li><strong>Inglês Intermediário</strong> - Leitura avançada</li>
+            </ul>
+        </section>
+
+        <!-- Seção 3: Portfólio -->
+        <section id="portfolio" class="secao">
+            <h2>Portfólio de Projetos</h2>
+            <div class="projeto">
+                <h3>Projeto 1: Help Desk com GLPI para Defesa Civil de Conatgem - MG</h3>
+                <p>Customização da plataforma GLPI para a Defesa Civil. 
+                    Trabalho para Mostra Tecnológica da FUNEC.
+                </p>
+        
+            </div>
+        </section>
+
+        <!-- Seção 4: Contato -->
+        <section id="contato" class="secao">
+            <h2>Contato</h2>
+            <form id="form-contato">
+                <label for="nome">Nome:
+                </label>
+                <input type="text" id="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+            <p id="msg-status"></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
